@@ -48,9 +48,9 @@
             <!-- items to display on mobile -->
         <div class="mobile-view">
             <div>
-                <nav class="navbar">
-                    <a href="" class="mobile-link">Sign in</a>
-                    <a href="" class="mobile-link">Sign Up</a>
+                <nav class="navbar" id="mobile-navbar">
+                    <a href="" >Sign in</a>
+                    <a href="">Sign Up</a>
                 </nav>
             </div>
         </div>
@@ -70,7 +70,9 @@
 
 
         <main>
-
+            <section>
+                @yield('content')  
+            </section>
         </main>
 
         <footer>

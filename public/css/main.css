@@ -40,5 +40,6 @@ html::-webkit-scrollbar-thumb{
 
 
 section{
-    margin-top: 18rem;
+   
+    padding: 2rem 7%;
 }

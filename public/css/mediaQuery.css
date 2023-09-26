@@ -9,9 +9,9 @@
         display: none; 
     }
 
-    .mobile-links {
-        display: block; 
-    }
+   #mobile-navbar{
+    display: inline-block;
+   }
 
     #txt-portfolio {
         display: none;
@@ -29,9 +29,9 @@
         display: none; 
     }
 
-    .mobile-link {
-        display: block; 
-    }
+    #mobile-navbar{
+        display: inline-block;
+       }
 
     #txt-portfolio {
         display: none;

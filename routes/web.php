@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('base.layout');
 });
-*/
 
+*/
 Route::get('/', [HomeController::class, 'index']);
 
