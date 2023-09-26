@@ -1,0 +1,45 @@
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .header .icons div {
+        display: block;
+    }
+
+    .header .navbar a {
+        display: none; 
+    }
+
+    .mobile-links {
+        display: block; 
+    }
+
+    #txt-portfolio {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:991px){
+    .header .icons div {
+        display: block;
+    }
+
+    .header .navbar a {
+        display: none; 
+    }
+
+    .mobile-link {
+        display: block; 
+    }
+
+    #txt-portfolio {
+        display: none;
+    }
+}
+  
+
+
+
+
+
