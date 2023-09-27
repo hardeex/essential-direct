@@ -86,3 +86,177 @@
     }
 
 }
+
+/* ===== FOOTER STYLE === */
+#txt-check-post {
+    margin-top: 100px;
+    text-align: center;
+    padding: 2rem 7%;
+    color: orangered;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsletter {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-img {
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    max-width: 50%; 
+}
+
+.newsletter-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 50%; 
+}
+
+.newsletter-content h4 {
+    margin-top: 0;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.newsletter-content p{
+    color: orangered;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+input[type="email"] {
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 5px;
+    max-width: 350px;
+}
+
+label[for="user-email"] {
+    padding: 5px;
+    background-color: orangered;
+    border-end-start-radius: 8px;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #9b9191;
+    color: black;
+    padding: 2rem 0;
+    margin-top: 40px;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.about-us,
+.quick-links,
+.services,
+.contact-us {
+    flex: 1;
+    padding: 1rem;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.e-direct-img img {
+    max-width: 100px;
+    height: auto;
+}
+
+.txt-about-us p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.footer h3 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.links a,
+.rendered-services a,
+.contact-us a {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.93rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links a:hover,
+.rendered-services a:hover,
+.contact-us a:hover {
+    color: #ff7f50; /* Hover color */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .footer-contents {
+        flex-direction: column;
+    }
+
+    .about-us,
+    .quick-links,
+    .services,
+    .contact-us {
+        text-align: center;
+    }
+
+    .about-us,
+    .quick-links,
+    .services,
+    .contact-us {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.copyright{
+    text-align: center;
+    background: darkblue;
+    padding: 20px;
+    color: white;
+    font-size: 1.6rem;
+}
