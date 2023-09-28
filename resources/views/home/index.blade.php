@@ -592,9 +592,6 @@
             <div class="post-title"><h3>Post Title 1</h3></div>
             <div class="post-link"><a href="#">Read More <i class="fas fa-arrow-right"></i></a></div>
         </div>
-
-       
-       
     </div>
     
     

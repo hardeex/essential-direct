@@ -34,10 +34,10 @@
             <a href="{{ url('/about') }}">About</a>
             <a href="{{ url('/packages') }}">Packages</a>
             <a href="{{ url('/people') }}">People</a>
-            <a href="">Business</a>
-            <a href="">Blog</a>
-            <a href="">Blacklist</a>
-            <a href="">Contact</a>
+            <a href="{{ url('/business') }}">Business</a>
+            <a href="{{ url('/blog') }}">Blog</a>
+            <a href="{{ url('/blacklist') }}">Blacklist</a>
+            <a href="{{ url('/contact') }}">Contact</a>
             <a href="" id="txt-login">Login</a>
             <a href="">Register</a>
             <a href="" id="txt-portfolio">List your Portfolio/Business</a>

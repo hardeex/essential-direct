@@ -23,4 +23,22 @@ class HomeController extends Controller
     public function people(){
         return view('home.people');
     }
+
+    public function business(){
+        return view('home.business');
+    }
+
+    public function blog(){
+        return view('home.blog');
+    }
+
+    public function blacklist(){
+        return view('home.blacklist');
+    }
+
+    public function contact(){
+        return view('home.contact');
+    }
+
+    
 }

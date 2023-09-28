@@ -1,16 +1,11 @@
-/* ==== THIS IS THE STYLE PAGE FOR
-        PEOPLE PAGE
-        BLOG PAGE
 
-        =======
-*/
 
 /* Style the hero section */
 .hero-section {
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background: url(/images/people.jpg) no-repeat;
+    background: url(/images/blacklist.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative; 
@@ -115,6 +110,22 @@
 }
 
 /* PEOPLE SECTION STYLE ==== */
+.blacklist-intro{
+    margin-bottom: 50px;
+}
+
+.blacklist-intro h3{
+    margin-top: 30px;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: centers;
+}
+
+.blacklist-intro p{
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
 .people-container{
     display: flex;
     justify-content: space-between;
@@ -273,39 +284,14 @@
 }
 
 
-
-/* Style for .db-ads */
-.db-user h3{
-    font-size: 4rem;
-    margin-bottom: 30px;
-}
-
-.db-ads,
-.db-ads-left,
-.db-ads-right {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-end; /
-}
-
-.db-ads img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.db-ads img:hover,
-.db-ads-left,
-.db-ads-right {
-    transform: scale(1.05); 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+.txt-no-round{
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 100%;
 }
 
 
 
-/**** ++============ STYLING THR BLOG PAGE ======= ******/
-.blog-post-container{
-    margin-top: 120px;
-}
+

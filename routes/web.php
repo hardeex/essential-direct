@@ -29,4 +29,9 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/packages', [HomeController::class, 'packages']);
 Route::get('/people', [HomeController::class, 'people']);
+Route::get('/business', [HomeController::class, 'business']);
+Route::get('/blog', [HomeController::class, 'blog']);
+Route::get('/blacklist', [HomeController::class, 'blacklist']);
+Route::get('/contact', [HomeController::class, 'contact']);
+
 
