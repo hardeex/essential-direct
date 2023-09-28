@@ -22,7 +22,7 @@
             </div>      
         </section>
  <!--- end of adding the hero-content--->  
-<!-- Wrap the search-hero-container in a parent container -->
+
 
     <div class="search-hero-container">
         <div class="search-form">
@@ -127,7 +127,7 @@
                             <div class="user-verfication">
                                 <div class="percent-verify">
                                     <div class="txt-verify">16% Verified</div>
-                                     <div class="user-verification-status">Not Verified</div>
+                                     <div class="user-verification-status"><p>Not Verified</p> </div>
                                 </div>
 
                                

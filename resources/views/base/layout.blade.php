@@ -30,10 +30,10 @@
     
         <!-- Start of the navigation bar -->
         <nav class="navbar" id="desktop-navbar">
-            <a href="{{ url('/') }}" id="txt-home">Home</a>
+            <a href="{{ url('/') }}" >Home</a>
             <a href="{{ url('/about') }}">About</a>
-            <a href="">Packages</a>
-            <a href="">People</a>
+            <a href="{{ url('/packages') }}">Packages</a>
+            <a href="{{ url('/people') }}">People</a>
             <a href="">Business</a>
             <a href="">Blog</a>
             <a href="">Blacklist</a>
@@ -145,5 +145,7 @@
                     <h3> (c) {{ date('Y') }} Designed by Essential Group Team </h3>
                 </div>
         </footer>
+
+        
 </body>
 </html>

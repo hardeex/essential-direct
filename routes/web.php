@@ -27,4 +27,6 @@ Route::get('/', function () {
 */
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
+Route::get('/packages', [HomeController::class, 'packages']);
+Route::get('/people', [HomeController::class, 'people']);
 

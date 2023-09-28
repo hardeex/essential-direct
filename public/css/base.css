@@ -24,6 +24,16 @@
     color: #fff;
 }
 
+.header .navbar a:hover{
+    font-size: 2rem;
+}
+
+.header .navbar a:active{
+    color: orangered;
+}
+
+
+
 .header .icons div {
     color: #fff;
     cursor: pointer;
@@ -44,9 +54,7 @@
     display: none;
 }
 
-#txt-home {
-    color: orangered;
-}
+
 
 #txt-login {
     padding-right: 12px;
@@ -66,26 +74,7 @@
     display: inline-block;
 }
 
-/* media queries for smaller screen */
-@media (max-width:450px){
 
-    .header .icons div {
-        display: block;
-    }
-
-    .header .navbar a {
-        display: none; 
-    }
-
-    .mobile-link {
-        display: block;
-    }
-
-    #txt-portfolio {
-        display: none;
-    }
-
-}
 
 /* ===== FOOTER STYLE === */
 #txt-check-post {
@@ -137,7 +126,7 @@
     font-size: 1.4rem;
 }
 
-form {
+.newsletter-content form {
     display: flex;
     align-items: center;
 }
@@ -151,7 +140,7 @@ form {
     color: white;
 }
 
-input[type="email"] {
+.input-container input[type="email"] {
     border: none;
     background: transparent;
     color: white;
@@ -159,7 +148,7 @@ input[type="email"] {
     max-width: 350px;
 }
 
-label[for="user-email"] {
+.input-container label[for="user-email"] {
     padding: 5px;
     background-color: orangered;
     border-end-start-radius: 8px;
@@ -228,35 +217,5 @@ label[for="user-email"] {
 .links a:hover,
 .rendered-services a:hover,
 .contact-us a:hover {
-    color: #ff7f50; /* Hover color */
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .footer-contents {
-        flex-direction: column;
-    }
-
-    .about-us,
-    .quick-links,
-    .services,
-    .contact-us {
-        text-align: center;
-    }
-
-    .about-us,
-    .quick-links,
-    .services,
-    .contact-us {
-        margin-bottom: 1.5rem;
-    }
-}
-
-
-.copyright{
-    text-align: center;
-    background: darkblue;
-    padding: 20px;
-    color: white;
-    font-size: 1.6rem;
+    color: #ff7f50; 
 }

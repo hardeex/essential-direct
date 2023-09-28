@@ -39,6 +39,58 @@
 }
   
 
+/* media queries for smaller screen */
+@media (max-width:450px){
+
+    .header .icons div {
+        display: block;
+    }
+
+    .header .navbar a {
+        display: none; 
+    }
+
+    .mobile-link {
+        display: block;
+    }
+
+    #txt-portfolio {
+        display: none;
+    }
+
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .footer-contents {
+        flex-direction: column;
+    }
+
+    .about-us,
+    .quick-links,
+    .services,
+    .contact-us {
+        text-align: center;
+    }
+
+    .about-us,
+    .quick-links,
+    .services,
+    .contact-us {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.copyright{
+    text-align: center;
+    background: darkblue;
+    padding: 20px;
+    color: white;
+    font-size: 1.6rem;
+}
+
 
 
 
