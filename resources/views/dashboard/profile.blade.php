@@ -15,10 +15,35 @@
     <div class="user-profile-container">
         <div class="user-account-info">
             <img src="/images/adewale.jpg" alt="">
+            <h3>FULL NAME</h3>
+            <p>Account Type: User </p>
         </div>
 
         <div class="user-data">
+            <h1>Information</h1>
 
+            <div class="user-contact">
+                <div class="auy"><p> Email: example@essential.com </p></div>
+                <div class="auy"><p>Phone:  0994437678 </p> </div>  
+            </div>
+
+            <div class="user-contact">
+                <div class="auy"> <p>Username: Adewale  </p>  </div>
+                <div class="auy"> <p>Password:  ****** </p> </div> 
+            </div>
+
+            <div class="user-links">
+                <div>
+                    <a href="{{ url('/change-password') }}">Change Password</a>
+                </div>
+                <div>
+                    <a href="{{ url('/edit-profile') }}" style="background: blue">Edit Profile</a>
+                </div>
+            </div>
+            
+           
         </div>
     </div>
+    
 @endsection
+

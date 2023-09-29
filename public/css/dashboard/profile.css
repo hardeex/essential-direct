@@ -1,1 +1,67 @@
+body{
+    background: rgb(216, 202, 202);
+}
 
+.user-profile-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 200px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 20px;
+}
+
+.user-profile-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.user-profile-container a{
+    font-size: 2rem;
+    background: orangered;
+    color: wheat;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.user-account-info h3{
+    text-align: center;
+  
+    font-size: 2.3rem;
+}
+
+.user-account-info p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 15px;
+}
+
+.user-data h1{
+    font-size: 2.2rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.user-contact {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px; 
+    font-size: 2rem;
+    margin: 15px;
+}
+
+
+.auy{
+    margin: 20px;
+}
+
+.user-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 2rem;
+}
