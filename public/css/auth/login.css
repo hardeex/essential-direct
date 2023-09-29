@@ -1,0 +1,75 @@
+/* ==== STYLE THE LOGIN PAGE ==== */
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(100, 95, 95, 0.2);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 150px auto;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-container p{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.login-container label {
+    font-weight: bold;
+    color: black;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.user-phone-number input[type= 'tel'] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+   background: blue;
+   
+}
+
+.login-container .links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+

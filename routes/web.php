@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Authentication;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,5 +35,13 @@ Route::get('/business', [HomeController::class, 'business']);
 Route::get('/blog', [HomeController::class, 'blog']);
 Route::get('/blacklist', [HomeController::class, 'blacklist']);
 Route::get('/contact', [HomeController::class, 'contact']);
+
+#AUTHENTICATION ROUTE
+Route::get('/login', [Authentication::class, 'login']);
+Route::get('/register', [Authentication::class, 'register']);
+Route::get('/forgot-password', [Authentication::class, 'forgotPassword']);
+
+# DASHBORAD AND PROFILE ROUTE
+Route::get('/profile', [DashboardController::class, 'profile']);
 
 

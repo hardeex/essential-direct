@@ -4,8 +4,8 @@
 
 <!--- adding the css and js files --->
 @section('links')
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/mediaQuery.css">
+    <link rel="stylesheet" href="/css/home/about.css">
+    <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 @endsection
 

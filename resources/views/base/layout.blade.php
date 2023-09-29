@@ -10,9 +10,9 @@
 
      <!-- adding styling links to each page layout -->
      @yield('links')
-     <link rel="stylesheet" href="/css/main.css">
-     <link rel="stylesheet" href="/css/base.css">
-     <link rel="stylesheet" href="/css/mediaQuery.css">
+     <link rel="stylesheet" href="/css/layout/main.css">
+     <link rel="stylesheet" href="/css/layout/base.css">
+     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
      <!-- link the interna JS file -->
      <script src="/js/script.js"></script>
 
@@ -38,8 +38,8 @@
             <a href="{{ url('/blog') }}">Blog</a>
             <a href="{{ url('/blacklist') }}">Blacklist</a>
             <a href="{{ url('/contact') }}">Contact</a>
-            <a href="" id="txt-login">Login</a>
-            <a href="">Register</a>
+            <a href="{{ url('/login') }}" id="txt-login">Login</a>
+            <a href="{{ url('/register') }}">Register</a>
             <a href="" id="txt-portfolio">List your Portfolio/Business</a>
 
         </nav>
