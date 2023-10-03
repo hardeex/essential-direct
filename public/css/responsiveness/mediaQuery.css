@@ -1,67 +1,156 @@
-
-/* Media query for mobile view */
+/* MAKING THE HEADER RESPONSIVE */
 @media (max-width: 768px) {
-    .header .icons div {
+    /* Hide Desktop Navbar on Small Screens */
+    .desktop-navbar {
+        display: none;
+    }
+
+    /* Show Mobile View on Small Screens */
+    .mobile-view {
         display: block;
     }
 
-    .header .navbar a {
-        display: none; 
-    }
-
-   #mobile-navbar{
-    display: inline-block;
-   }
-
-    #txt-portfolio {
-        display: none;
-    }
-}
-
-
-
-@media (max-width:991px){
-    .header .icons div {
+    /* Display the menu icon in the mobile view */
+    .mobile-view .menu-icon {
         display: block;
     }
 
-    .header .navbar a {
-        display: none; 
-    }
-
-    #mobile-navbar{
-        display: inline-block;
-       }
-
-    #txt-portfolio {
-        display: none;
+    /* Override the display property for .header .icons div --- I user !important to override the display:none from the base.css*/
+    .header .icons div {
+        display: block !important;
     }
 }
+/* end of the header responsiveness */
+
+
+/**** WORKING ON THE INDEX VIEW RESPONSIVENESS */
+
+/*** The hero and search form ection */
+@media (max-width: 768px) {
+    
+    .hero-section .hero-content #home-title {
+        font-size: 2rem;  
+        text-align: center; 
+       
+    }
+
+    .search-hero-container {
+       
+        align-items: stretch; 
+        padding: 10px;
+        max-width: 100%;
+        transform: translate(-50%, -70%);
+    }
+
+    .search-form input {
+        width: 100%; 
+    }
+
+    .choose-user select {
+        padding: 3px;
+    }
+
+    .highlight {
+        max-width: 100%;
+    }
+
+    .highlight img{
+        width: 100%;
+    }
+
+
+    .db-user h3{
+        font-size: 2.3rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+
+    .db-data-container,
+    .db-container {
+        flex-direction: column; 
+        align-items: stretch; 
+        padding: 10px;
+    }
+
+    .db-image img {
+        max-width: 100%;
+    }
+
+    .user-details {
+        padding: 10px 0; 
+    }
+    
+    .business-category-section,
+    .show-items-container,
+    .txt-browse-items-link{
+        flex-direction: column;
+        align-items: stretch; 
+        padding: 10px;
+    }
+
+    .show-items-container,
+    .txt-browse-items-link{
+        align-items: center;
+    }
+
+    .item-list-ads img {
+        max-width: 100%;
+        margin-top: 0; /* Remove negative margin for smaller screens */
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
   
 
-/* media queries for smaller screen */
-@media (max-width:450px){
-
-    .header .icons div {
-        display: block;
+    .business-category-items,
+    .item-list {
+        grid-template-columns: repeat(2, 1fr); 
     }
 
-    .header .navbar a {
-        display: none; 
+    .business-post-category{
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+    
+    .category-item {
+        margin: 10px 0; 
+    } 
+
+    .maximize,
+    .registration {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 5%; 
     }
 
-    .mobile-link {
-        display: block;
+     /* Adjust styles for smaller screens here */
+    #txt-package{
+        font-size: 2rem;
+    }
+    .package-item {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    #txt-portfolio {
-        display: none;
-    }
-
+    
 }
 
+/**** END OF WORKING ON THE INDEX VIEW RESPONSIVENESS */
 
-/* Responsive styles for smaller screens */
+
+/* THE ABOUT PAGE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .hero-section .hero-content h3{
+        font-size: 5rem;
+    }
+
+    .get-in-touch-container{
+        display: block;
+    }
+}
+
+/* The FOOTER Responsiveness styles for smaller screens */
 @media (max-width: 768px) {
     .footer-contents {
         flex-direction: column;

@@ -10,11 +10,11 @@
 
      <!-- adding styling links to each page layout -->
      @yield('links')
-     <link rel="stylesheet" href="/css/layout/main.css">
+     
      <link rel="stylesheet" href="/css/layout/base.css">
      <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
      <!-- link the interna JS file -->
-     <script src="/js/script.js"></script>
+     <script src="/js/script.js" defer></script>
 
       <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -27,10 +27,10 @@
         <a href="{{ url('/') }}" class="logo">
             <img src="images/e-direct-logo.png" alt="E-Direct Logo">
         </a>
-    
-        <!-- Start of the navigation bar -->
-        <nav class="navbar" id="desktop-navbar">
-            <a href="{{ url('/') }}" >Home</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="navbar desktop-navbar" id="desktop-navbar">
+            <a href="{{ url('/') }}">Home</a>
             <a href="{{ url('/about') }}">About</a>
             <a href="{{ url('/packages') }}">Packages</a>
             <a href="{{ url('/people') }}">People</a>
@@ -40,29 +40,47 @@
             <a href="{{ url('/contact') }}">Contact</a>
             <a href="{{ url('/login') }}" id="txt-login">Login</a>
             <a href="{{ url('/register') }}">Register</a>
-            <a href="" id="txt-portfolio">List your Portfolio/Business</a>
-
+            <a href="{{ url('/login') }}" id="txt-portfolio">List your Portfolio/Business</a>
         </nav>
-        <!-- End of the navigation bar -->
-    
-            <!-- items to display on mobile -->
-        <div class="mobile-view">
-            <div>
-                <nav class="navbar" id="mobile-navbar">
-                    <a href="" >Sign in</a>
-                    <a href="">Sign Up</a>
-                </nav>
-            </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-view" id="mobile-view">
+            <nav class="navbar" id="mobile-navbar">
+                <a href="{{ url('/login') }}">Sign in</a>
+                <a href="{{ url('/register') }}">Sign Up</a>
+            </nav>   
         </div>
 
-    
-        <div class="icons">
-            <div class="menu-icon" id="menu-icon">
-                <div class="fas fa-bars"></div>
+                <!-- Menu Icon for the mobile view -->
+            <div class="icons" id="icons">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="fas fa-bars"></div>
+                </div>
             </div>
-        </div>
-    
+
+            <!-- Side Navigation -->
+            <nav class="sidebar" id="sidebar">
+                <a href="#" class="close-button" id="close-button"><i class="fas fa-times"></i></a>
+                <a href="{{ url('/') }}">Home</a>
+                <a href="{{ url('/about') }}">About</a>
+                <a href="{{ url('/packages') }}">Packages</a>
+                <a href="{{ url('/people') }}">People</a>
+                <a href="{{ url('/business') }}">Business</a>
+                <a href="{{ url('/blog') }}">Blog</a>
+                <a href="{{ url('/blacklist') }}" style="color: black">Blacklist</a>
+                <a href="{{ url('/contact') }}">Contact</a>
+                
+                <div class="sidebar-auth" style="display: flex">
+                    <a href="{{ url('/login') }}" id="txt-login">Login</a>
+                    <a href="{{ url('/register') }}">Register</a>
+                </div>
+                
+                <a href="{{ url('/login') }}" id="txt-portfolio" style="margin-top: 50px">List your Portfolio/Business</a>
+            </nav>
+
     </header>
+      
+               
     
     @yield('hero-content')
 

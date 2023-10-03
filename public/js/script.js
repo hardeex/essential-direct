@@ -1,3 +1,40 @@
+
+
+
+// TOGGLE THE MENU ICONS CODE --- show/hide the nav menu\
+// access the document dom  upon loading the screen using DomContentLoader and access the variable using querySelector
+document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.querySelector('#menu-icon');
+    var sidebar = document.querySelector('#sidebar');
+    var closeButton = document.querySelector('#close-button');
+
+    // Function to toggle the sidebar visibility 
+    function toggleSidebar() {
+        sidebar.classList.toggle('sidebar-open');
+    }
+
+    // Function to close the sidebar when the close button is clicked
+    function closeSidebar() {
+        sidebar.classList.remove('sidebar-open');
+    }
+
+    // Add a click event listener to the menu icon to open the sidebar
+    menuIcon.addEventListener('click', toggleSidebar);
+
+    // Add a click event listener to the close button to close the sidebar
+    closeButton.addEventListener('click', closeSidebar);
+});
+
+
+// Playing around with my code
+
+
+
+// end of toggling the nav menu
+
+
+
+
 // FORGOT PASSWORD JAVASCRIPT TOOGLE JS CODE
 function toggleResetOption() {
     const resetOption = document.getElementById("reset-option").value;

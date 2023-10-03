@@ -7,6 +7,7 @@
 <!--- adding the css and js files --->
 @section('links')
     <link rel="stylesheet" href="/css/home/packages.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 @endsection
@@ -16,7 +17,7 @@
  <!--- start of adding the hero-content--->
         <section class="hero-section" id="hero-section">
             <div class="hero-content">
-            <h3>Choose from any of our listing Packages that suit your business needs</h3>
+            <h3 id="txt-package">Choose from any of our listing Packages that suit your business needs</h3>
             <p>Get a package of your choice to get your business listed out on our business marketing page page</p>
             </div>      
         </section>

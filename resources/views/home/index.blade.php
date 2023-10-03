@@ -7,6 +7,7 @@
 <!--- adding the css and js files --->
 @section('links')
     <link rel="stylesheet" href="/css/home/index.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 @endsection
@@ -16,7 +17,7 @@
  <!--- start of adding the hero-content--->
         <section class="hero-section" id="hero-section">
             <div class="hero-content">
-            <h3>
+            <h3 id="home-title">
                 We tell you more about People, Businesses & Places In Nigeria Than Any Other Directory.
             </h3>
             </div>      
@@ -87,7 +88,11 @@
                     </div>
 
                     <div class="user-details">
-                        <p><b>Business ID: </b></p>
+                        <div class="biz-id-open">
+                            <div> <p><b>Business ID: </b></p></div>                            
+                            <div class="txt-open-or-close"><p>Opened</p></div>
+                        </div>
+                        
                         <div class="last-visited-details">
                             <div class="txt-since"> <p><b> Since:  </b></p> </div>
                             <div> <p><b>Total Visit: </b></p></div>  
@@ -131,18 +136,18 @@
                                 </div>
 
                                
-                                   
+                            <div class="share-and-view-user-data">
+                                <div class="share-user-data"><span class="fa fa-share-alt"></span></div>
+                                <div class="view-user-data"><small>View business</small></div>
+                            </div>  
                                 
                             </div>
                         </div>
                     </div>
 
                     <div class="check-status">
-                        <div class="txt-open-or-close"><p>Opened</p></div>
-                        <div class="share-and-view-user-data">
-                            <div class="share-user-data"><span class="fa fa-share-alt"></span></div>
-                            <div class="view-user-data"><small>View business</small></div>
-                        </div>
+                        
+                       
                     </div>
                   
                 </div>
@@ -170,8 +175,8 @@
                 <img src="/images/ads/ad2.png" alt="">
                 <img src="/images/ads/ads3.png" alt="">
                 <img src="/images/ads/ads4.png" alt="">
-                <img src="/images/ads/ads4.png" alt="" style="height: 100%">
-                <img src="/images/ads/ad2.png" alt="" style="height: 100%">
+                <img src="/images/ads/ads4.png" alt="" >
+                <img src="/images/ads/ad2.png" alt="">
             </div>
             <!-- end of showing ads --->
 
@@ -445,8 +450,8 @@
                 <img src="/images/ads/ad2.png" alt="">
                 <img src="/images/ads/ads3.png" alt="">
                 <img src="/images/ads/ads4.png" alt="">
-                <img src="/images/ads/ads4.png" alt="" style="height: 100%">
-                <img src="/images/ads/ad2.png" alt="" style="height: 100%">
+                <img src="/images/ads/ads4.png" alt="" >
+                <img src="/images/ads/ad2.png" alt="" >
             </div>
             <!-- end of showing ads --->
         </div>

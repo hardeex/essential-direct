@@ -43,7 +43,7 @@
 }
 
 .header .icons div:hover {
-    color: var(--hover);
+    color: var(--background-color);
 }
 
 .icons a {
@@ -74,6 +74,52 @@
     display: inline-block;
 }
 
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: var(--main-color);
+    color: black;
+    z-index: 999;
+    transition: right 0.3s ease; 
+}
+
+/* Apply display: block; to each anchor link in the sidebar */
+.sidebar a {
+    color: white !important;
+    font-size: 1.4em;
+    display: block; 
+    padding: 10px 20px; 
+    text-decoration: none; /* Remove underlines */
+}
+
+.sidebar a:hover {
+    color: var(--background-color);
+}
+
+/* CSS for the sidebar when it is open */
+.sidebar.sidebar-open {
+    left: 0;
+}
+
+/* CSS for the close button */
+.close-button i{
+    color: red !important;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.close-button:hover i{
+    background-color: #ddd; /* Add a hover effect */
+}
 
 
 /* ===== FOOTER STYLE === */

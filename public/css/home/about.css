@@ -3,7 +3,7 @@
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background: url(/images/about-us.jpg) no-repeat;
+    background: url(/images/about-us-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     border-bottom-right-radius: 12rem;

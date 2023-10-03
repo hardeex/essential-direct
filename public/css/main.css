@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+                                    /* STYLING THE WEBVIEW AND BROWSERS PERFORMANCE---- Adewale */
 :root{
     --main-color: rgb(4, 4, 68);
     --black:#13131a;
     --border:.1rem solid #fff;
-    --hover: orangered;
+    --background-color: orangered;
+    --background-color-hover: rgb(58, 58, 226);
 }
 
 *{
@@ -42,3 +44,9 @@ html::-webkit-scrollbar-thumb{
 section{
     padding: 2rem 7%;
 }
+
+
+p{
+    font-size: 1.5rem;
+}
+
