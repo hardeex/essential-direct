@@ -80,3 +80,66 @@ function sendResetLink() {
         alert(`Developer Adewale testing the Reset link sent to phone number: ${phone}`);
     }
 }
+
+//   WORKING ON THE USER DASHBOARD --- SHOW AND UPDATE THE SWITCH ACCOUNT FROM THE DASHBOARD
+function showSwitchAccountAlert() {
+    const switchAccountAlert = document.getElementById('switch-account-alert');
+    switchAccountAlert.style.display = 'block';
+
+    // Attach a click event listener to the Cancel button
+    const cancelButton = switchAccountAlert.querySelector('.cancel-button');
+    cancelButton.addEventListener('click', closeSwitchAccountAlert);
+}
+
+function switchAccount() {
+    const userRadio = document.getElementById('user-radio');
+    const businessRadio = document.getElementById('business-radio');
+
+    if (userRadio.checked) {
+        // Redirect to the user account page
+        window.location.href = 'profile';
+    } else if (businessRadio.checked) {
+        // Redirect to the business account page
+        window.location.href = 'business_account_page_url_here';
+    }
+
+    // Close the custom alert
+    closeSwitchAccountAlert();
+}
+
+function closeSwitchAccountAlert() {
+    const switchAccountAlert = document.getElementById('switch-account-alert');
+    switchAccountAlert.style.display = 'none';
+}
+
+// Add this function to show the alert when clicking "Switch Account"
+document.querySelector('.switch-account').addEventListener('click', showSwitchAccountAlert);
+
+
+
+
+
+
+
+
+
+
+
+// playing around with the code for loading the content from the db in the dashboard
+function loadContent(sectionId) {
+    // Get the content of the selected section
+    const content = document.getElementById(sectionId);
+
+    // Get the dashboard section
+    const dashboardSection = document.getElementById('dashboard-section');
+
+    // Clear the content of the dashboard section
+    dashboardSection.innerHTML = '';
+
+    // Append the selected content to the dashboard section
+    dashboardSection.appendChild(content.cloneNode(true));
+}
+
+
+
+

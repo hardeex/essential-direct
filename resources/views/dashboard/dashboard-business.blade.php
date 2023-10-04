@@ -30,8 +30,8 @@
         <!-- Desktop Navigation -->
         <nav class="navbar desktop-navbar" id="desktop-navbar">
             <a href="">Logout</a>
-            <a href="">Switch Account</a>
-            <a href="">My Profile</a>
+            <a href="" class="switch-account">Switch Account</a>
+            <a href="{{ url('/profile') }}">My Profile</a>
         </nav>
     </header>
       
@@ -51,7 +51,7 @@
 
                 <div class="dashboard-nav-item">
                     <i class="fas fa-home"></i>
-                    <a href="">Home</a>
+                    <a href="{{ url('/') }}">Home</a>
                 </div>
 
                 <div class="dashboard-nav-item">

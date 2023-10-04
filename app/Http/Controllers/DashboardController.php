@@ -10,7 +10,11 @@ class DashboardController extends Controller
         return view('dashboard.profile');
     }
 
-    public function dashboard(){
-        return view('dashboard.admin-dashboard');
+    public function dashboardBusiness(){
+        return view('dashboard.dashboard-business');
+    }
+
+    public function dashboardUser(){
+        return view('dashboard.dashboard-user');
     }
 }

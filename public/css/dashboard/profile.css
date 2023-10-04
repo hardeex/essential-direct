@@ -72,6 +72,9 @@ body{
 .dashboard-container {
     display: flex;
     height: 100vh; 
+
+    
+    margin-top: 90px;
 }
 
 /* Sidebar navigation */
@@ -105,11 +108,83 @@ body{
     font-size: 1.7rem;
 }
 
-.dashboard-content {
+.dashboard-section {
     flex: 2;
     padding: 20px;
     background-color: #fff;
     color: #333;
     height: 100%; 
     overflow-y: auto; 
+    margin-top: 90px;
 }
+
+
+/**** STYLING THE ALERT FOR THE SWITCH ACCOUNT BTN IN THE DASHBOARDS **/
+/* Style for the custom alert */
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    text-align: center;
+}
+
+.custom-alert h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.custom-alert form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-alert label {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+
+.custom-alert .alert-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.custom-alert .cancel-button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.custom-alert .cancel-button:hover {
+    background-color: #999;
+}
+
+.custom-alert button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.custom-alert button:hover {
+    background-color: var(--main-color);
+}
+

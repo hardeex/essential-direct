@@ -43,6 +43,7 @@ Route::get('/forgot-password', [Authentication::class, 'forgotPassword']);
 
 # DASHBORAD AND PROFILE ROUTE
 Route::get('/profile', [DashboardController::class, 'profile']);
-Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+Route::get('/dashboard-business', [DashboardController::class, 'dashboardBusiness']);
+Route::get('/dashboard-user', [DashboardController::class, 'dashboardUser']);
 
 
