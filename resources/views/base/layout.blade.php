@@ -40,6 +40,17 @@
             <a href="{{ url('/contact') }}">Contact</a>
             <a href="{{ url('/login') }}" id="txt-login">Login</a>
             <a href="{{ url('/register') }}">Register</a>
+            <!-----
+                    Run the authentication and show the following menu at the nav bar when user is logged in
+                    Dashboard ----
+                    Profile ---- Page prepared
+                    Account ---
+                    logout
+
+                    Also, check for the db-container data changes such as some text changes when user logged in
+                    Also, check for all pages and performance for both user and business PERSON
+                    Also, navigate through the registration process to see the diiferences in performance
+                ----->
             <a href="{{ url('/login') }}" id="txt-portfolio">List your Portfolio/Business</a>
         </nav>
 
@@ -127,13 +138,13 @@
                     <div class="quick-links">
                         <h3>Quick Links</h3>
                         <div class="links">
-                            <a href="" style="color: orangered">Home</a>
-                            <a href="">About</a>
-                            <a href="">Packages</a>
-                            <a href="">People</a>
-                            <a href="">Businesses</a>
-                            <a href="">Blog</a>
-                            <a href="">Contact Us</a>
+                            <a href="{{ url('/') }}" style="color: orangered">Home</a>
+                            <a href="{{ url('/about') }}">About</a>
+                            <a href="{{ url('/packages') }}">Packages</a>
+                            <a href="{{ url('/people') }}">People</a>
+                            <a href="{{ url('/business') }}">Businesses</a>
+                            <a href="{{ url('/blog') }}">Blog</a>
+                            <a href="{{ url('/contact') }}">Contact Us</a>
                         </div>
                     </div>
             

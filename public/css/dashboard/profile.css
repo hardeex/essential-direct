@@ -65,3 +65,51 @@ body{
     padding: 20px;
     font-size: 2rem;
 }
+
+
+/****** DASHBOARD CONTAINER STYLES *****/
+/* Overall dashboard container */
+.dashboard-container {
+    display: flex;
+    height: 100vh; 
+}
+
+/* Sidebar navigation */
+.dashboard-sidebar-nav {
+    flex: 1;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px;
+    max-width: 15%; 
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+.dashboard-nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.dashboard-nav-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: gray;
+}
+
+.dashboard-nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.dashboard-content {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    height: 100%; 
+    overflow-y: auto; 
+}
