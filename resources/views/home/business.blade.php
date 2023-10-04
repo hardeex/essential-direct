@@ -7,6 +7,7 @@
 <!--- adding the css and js files --->
 @section('links')
     <link rel="stylesheet" href="/css/home/business.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 @endsection
@@ -16,7 +17,7 @@
  <!--- start of adding the hero-content--->
         <section class="hero-section" id="hero-section">
             <div class="hero-content">
-            <h3>
+            <h3 id="txt-biz">
                 Search For Businesses Of <br> Your Choice.
             </h3>
             </div>      
@@ -50,6 +51,7 @@
 @endsection
 
 @section('content')
+
 <div class="people-container">
     <div class="db-business-category">
         <h3>show business categories from the database</h3>
@@ -89,7 +91,11 @@
             </div>
 
             <div class="user-details">
-                <p><b>Business ID: </b></p>
+                <div class="biz-id-open">
+                    <div> <p><b>Business ID: </b></p></div>                            
+                    <div class="txt-open-or-close"><p>Opened</p></div>
+                </div>
+                
                 <div class="last-visited-details">
                     <div class="txt-since"> <p><b> Since:  </b></p> </div>
                     <div> <p><b>Total Visit: </b></p></div>  
@@ -133,18 +139,18 @@
                         </div>
 
                        
-                           
+                    <div class="share-and-view-user-data">
+                        <div class="share-user-data"><span class="fa fa-share-alt"></span></div>
+                        <div class="view-user-data"><small>View business</small></div>
+                    </div>  
                         
                     </div>
                 </div>
             </div>
 
             <div class="check-status">
-                <div class="txt-open-or-close"><p>Opened</p></div>
-                <div class="share-and-view-user-data">
-                    <div class="share-user-data"><span class="fa fa-share-alt"></span></div>
-                    <div class="view-user-data"><small>View business</small></div>
-                </div>
+                
+               
             </div>
           
         </div>
