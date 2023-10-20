@@ -16,7 +16,8 @@
     <div class="register-container">
         <h2>Register</h2>
         <p>Fill-in the form to create your account</p>
-            <form action="" method="POST">
+            <form action="{{ url('auth.register') }}" method="POST">
+                @csrf
                 <label for="accountType">Account Type:</label>
                 <select id="accountType" name="accountType">
                     <option value="">Please select an account type</option>
@@ -60,7 +61,7 @@
                 <a href="{{ url('/login') }}">Sign in to your account</a>
                 <br><br><br><br><br>
         
-               <button> Submit</button>
+               <button type="submit"> Submit</button>
             </form>
        </div>
 @endsection

@@ -54,7 +54,7 @@
                         </div>
                     </form>
                 </div>
-                
+                <!-- End of the Hidden div for the custom alert -->
 
              
                
@@ -65,52 +65,42 @@
         <div class="dashboard-container">
             <!--- start of the sidebar nav--->
             <div class="dashboard-sidebar-nav">
-
                 <div class="dashboard-nav-item">
                     <i class="fas fa-tachometer-alt"></i>
-                    <a href="javascript:void(0);" onclick="loadContent('dashboard-section')">Dashboard</a>
+                    <a href="{{ url('/create-portfolio') }}" target="content-frame" style="color: orangered">Dashboard</a>
                 </div>
-
-                
                 <div class="dashboard-nav-item">
                     <i class="fas fa-home"></i>
-                    <a href="javascript:void(0);" onclick="loadContent('home-section')">Home</a>
-                </div>
-
-                
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-building"></i>
-                    <a href="javascript:void(0);" onclick="loadContent('portfolio-section')">View Portfolio</a>
+                    <a href="{{ url('/') }}" target="content-frame">Home</a>
                 </div>
                 
+                <div class="dashboard-nav-item">
+                    <i class="fas fa-briefcase"></i>
+                    <a href="{{ url('/login') }}" target="content-frame">View Portfolio</a>
+                </div>
 
                 <div class="dashboard-nav-item">
-                    <i class="fas fa-building"></i>
-                    <a href="javascript:void(0);" onclick="loadContent('friends-section')">Friends</a>
+                    <i class="fas fa-users"></i>
+                    <a href="{{ url('/login') }}" target="content-frame">Friends</a>
                 </div>
+
+                  <div class="dashboard-nav-item">
+                    <i class="fas fa-edit"></i>
+                    <a href="{{ url('/login') }}" target="content-frame">Posts</a>
+                </div>
+
+                 <div class="dashboard-nav-item">
+                    <i class="fas fa-plus-circle"></i>
+                    <a href="{{ url('/login') }}" target="content-frame">Create Posts</a>
+                </div>
+            </div>
+            <!--- End of the sidebar nav--->
         
-
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-building"></i>
-                    <a href="javascript:void(0);" onclick="loadContent('post-section')">Posts</a>
-                </div>
-              
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-building"></i>
-                    <a href="javascript:void(0);" onclick="loadContent('create-section')">Create Posts</a>
-                </div>
-
-            </div>
-             <!--- End of the sidebar nav--->
-
-             <div class="dashboard-section" id="dashboard-section">
-                <!-- Content for Dashboard section goes here -->
-                <p>The  contents for the view....</p>
-            </div>
-            
-          
-
+            <!-- The iframe container -->
+            <iframe name="content-frame" id="content-frame" src="{{ url('/create-portfolio')}}"></iframe>
         </div>
+        
+        
          <!--- end of the container for both the dashboard nav and the content-->
 
 <!---- playing  around with some code-->

@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\EssentialDirectBusinessModel;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +20,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        // calling the essential-direct-seeder class that i created fpr laying  around with data
+        //$this->call(EssentialDirectBusinessUserSeeder::class);
+
+        // calling the factory class that contains fake data
+        EssentialDirectBusinessModel::factory(50)->create();
     }
 }

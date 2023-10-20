@@ -3,18 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class Authentication extends Controller
 {
-    public function login(){
+    protected function login(){
         return view('auth.login');
     }
 
-    public function register(){
+    private function register(Request $request)
+    {
+        // Validate the user input
         return view('auth.register');
     }
 
-    public function forgotPassword(){
+    protected function forgotPassword(){
         return view('auth.forgot-password');
     }
 }

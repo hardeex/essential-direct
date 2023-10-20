@@ -17,4 +17,12 @@ class DashboardController extends Controller
     public function dashboardUser(){
         return view('dashboard.dashboard-user');
     }
+
+    public function createPortfolio(){
+        return view('dashboard.create-a-new-portfolio');
+    }
+
+    public function friends(){
+        return view('dashboard.friends');
+    }
 }
