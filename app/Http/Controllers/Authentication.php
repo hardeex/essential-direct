@@ -7,17 +7,17 @@ use App\Models\User;
 
 class Authentication extends Controller
 {
-    protected function login(){
+    public function login(){
         return view('auth.login');
     }
 
-    private function register(Request $request)
+    public function register()
     {
         // Validate the user input
         return view('auth.register');
     }
 
-    protected function forgotPassword(){
+    public function forgotPassword(){
         return view('auth.forgot-password');
     }
 }

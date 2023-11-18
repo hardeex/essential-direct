@@ -1,10 +1,9 @@
 <?php
 
-use App\Http\Controllers\Authentication;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\fallbackController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FallbackController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,18 +16,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/', function () {
-    return view('base.layout');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-*/
-Route::get('/', [HomeController::class, 'index']);
+require __DIR__.'/auth.php';
+
+
+
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/packages', [HomeController::class, 'packages']);
 Route::get('/people', [HomeController::class, 'people']);
@@ -37,23 +42,5 @@ Route::get('/blog', [HomeController::class, 'blog']);
 Route::get('/blacklist', [HomeController::class, 'blacklist']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
-
-
-#AUTHENTICATION ROUTE
-Route::get('/login', [Authentication::class, 'login'])->name('login');
-Route::get('/register', [Authentication::class, 'register'])->name('register');
-Route::get('/forgot-password', [Authentication::class, 'forgotPassword']);
-
-
-# DASHBORAD AND PROFILE ROUTE
-Route::get('/profile', [DashboardController::class, 'profile']);
-Route::get('/dashboard-business', [DashboardController::class, 'dashboardBusiness']);
-Route::get('/dashboard-user', [DashboardController::class, 'dashboardUser']);
-Route::get('/create-portfolio', [DashboardController::class, 'createPortfolio']);
-Route::get('/friends', [DashboardController::class, 'friends']);
-
-
-
-
 // handling the error page
-Route::fallback(fallbackController::class);
+Route::fallback([FallbackController::class, '__invoke']);

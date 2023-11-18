@@ -1,7 +1,7 @@
 <!--- adding the base layout -->
 @extends('base.layout')
 
-@section('title', 'Essential Direct')
+@section('title', 'E-Direct Packages')
 
 
 <!--- adding the css and js files --->

@@ -1,67 +1,52 @@
-<!--- adding the base layout -->
-@extends('base.layout')
+<x-guest-layout>
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
 
-@section('title', 'Register')
+        <!-- Name -->
+        <div>
+            <x-input-label for="name" :value="__('Name')" />
+            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+        </div>
 
+        <!-- Email Address -->
+        <div class="mt-4">
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
 
-<!--- adding the css and js files --->
-@section('links')
-    <link rel="stylesheet" href="/css/auth/register.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-@endsection
+        <!-- Password -->
+        <div class="mt-4">
+            <x-input-label for="password" :value="__('Password')" />
 
-@section('content')
-    <div class="register-container">
-        <h2>Register</h2>
-        <p>Fill-in the form to create your account</p>
-            <form action="{{ url('auth.register') }}" method="POST">
-                @csrf
-                <label for="accountType">Account Type:</label>
-                <select id="accountType" name="accountType">
-                    <option value="">Please select an account type</option>
-                    <option value="business">Business</option>
-                    <option value="user">User</option>
-                </select><br><br>
-        
-                <label for="accountPrivacy">Account Privacy (Option to make contact informations visible or invisible)</label>
-                <select id="accountPrivacy" name="accountPrivacy">
-                    <option value="">Please select</option>
-                    <option value="public">Public</option>
-                    <option value="private">Private</option>
-                </select><br><br>
+            <x-text-input id="password" class="block mt-1 w-full"
+                            type="password"
+                            name="password"
+                            required autocomplete="new-password" />
 
-                <label for="fullName">Full Name:</label>
-                <input type="fullName" id="fullName" name="fullName" required><br><br>
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-         
-                <label for="phoneNumber">Phone Number:</label>
+        <!-- Confirm Password -->
+        <div class="mt-4">
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
 
-                <div class="user-phone-number">
-                <select id="country" name="country">
-                    <option value="">API will be used to run this data</option>
-                    <option value="usa">USA (+1)</option>
-                    <option value="uk">UK (+44)</option>
-                    <option value="canada">Canada (+1)</option>
-                    <option value="nigeria">Nigeria (+234)</option>
-                </select>
+            <x-text-input id="password_confirmation" class="block mt-1 w-full"
+                            type="password"
+                            name="password_confirmation" required autocomplete="new-password" />
 
-                <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
-                </div>
-                
-        
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
-        
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                <a href="{{ url('/login') }}">Sign in to your account</a>
-                <br><br><br><br><br>
-        
-               <button type="submit"> Submit</button>
-            </form>
-       </div>
-@endsection
+            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="flex items-center justify-end mt-4">
+            <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
+                {{ __('Already registered?') }}
+            </a>
+
+            <x-primary-button class="ms-4">
+                {{ __('Register') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>
