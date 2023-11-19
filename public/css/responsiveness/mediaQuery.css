@@ -237,6 +237,13 @@
 }
 
 
+/* ===== AUTHENTICATION ==== */
+@media (max-width: 768px) {
+    .e-image{
+        margin-top: 200px;
+    }
+}
+
 
 
 

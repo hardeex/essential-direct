@@ -1,3 +1,19 @@
+<!--- adding the base layout -->
+@extends('base.layout')
+
+@section('title', 'Register')
+
+<!--- adding the css and js files --->
+@section('links')
+    <link rel="stylesheet" href="/css/auth/register.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+@endsection
+
+
+@section('content')
+    
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
@@ -50,3 +66,5 @@
         </div>
     </form>
 </x-guest-layout>
+
+@endsection
