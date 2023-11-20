@@ -42,7 +42,7 @@
             <a href="{{ url('/blacklist') }}">Blacklist</a>
             <a href="{{ url('/contact') }}">Contact</a>
             <a href="{{ route('login') }}" id="txt-login">Login</a>
-            <a href="{{ route('register') }}">Register</a>
+            <a href="{{ route('custom.register') }}">Register</a>
             <!-----
                     Run the authentication and show the following menu at the nav bar when user is logged in
                     Dashboard ----
