@@ -48,5 +48,27 @@ Route::get('/blog', [HomeController::class, 'blog']);
 Route::get('/blacklist', [HomeController::class, 'blacklist']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
+Route::get('/test', function(){
+    return view('dashboard.create-a-new-portfolio');
+});
+
+Route::get('/test2', function(){
+    return view('dashboard.dashboard-business');
+});
+
+
+Route::get('/test3', function(){
+    return view('dashboard.dashboard-user');
+});
+
+Route::get('/test4', function(){
+    return view('dashboard.friends');
+});
+
+Route::get('/test5', function(){
+    return view('dashboard.profile');
+});
+
+
 // handling the error page
 Route::fallback([FallbackController::class, '__invoke']);

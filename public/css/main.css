@@ -122,22 +122,19 @@ button:hover {
     padding: 15px;
     border-radius: 50px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
     max-width: 60%;
-
-    position: relative;
+    margin: 0 auto; 
     top: 50%;
     left: 50%;
-    transform: translate(-80%, -50%);
+    transform: translate(-5%, -50%);
 }
 
-.search-form{
+.search-form {
     width: 60%;
 }
 
-
 .search-form input[type="text"] {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -145,10 +142,8 @@ button:hover {
     outline: none;
 }
 
-.choose-user label {
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 1.7rem;
+.choose-user {
+    margin-left: 10px; 
 }
 
 .choose-user select {
@@ -170,6 +165,7 @@ button:hover {
 .txt-search i {
     margin-right: 5px;
 }
+
 
 /* ==== END OF THE STYLING THE SEARCH AREA ==== */
 

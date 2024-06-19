@@ -62,16 +62,14 @@
 }
 
 #txt-portfolio {
-    width: 160px;
     padding: 8px;
-    padding-left: 15px;
-    padding-right: 10px;
     text-align: center;
     background: orangered;
     vertical-align: middle;
-    border-radius: 8px;
-    overflow-wrap: break-word;
+    border-radius: 6px;
+    /* overflow-wrap: break-word; */
     display: inline-block;
+    font-size: 13px;
 }
 
 
